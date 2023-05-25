@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jason Wang's Profile</title>
+    <meta name="author" content="Jason Wang">
+    <link rel="stylesheet" href="profile.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+</head>
+
+<body id="body"> 
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                
+                <div id="face_photo">
+                    <img src="./images/profile.JPG" alt="My Sample Image"> 
+                </div> 
+                <div id="introduction">
+                    <p class="text">
+                        Hi! I'm Jason, a second year at UNSW. Making this website has been a lot of fun!
+                        
+                    </p>     
+                </div>
+            </div>
+        </header>
+
+        <div class="about_grid">
+            <script>
+                document.getElementById("body").onscroll = function myFunction() {  
+                var scrolltotop = document.scrollingElement.scrollTop;
+                var target = document.getElementById("back01");
+                var target2= document.getElementById("back02");
+                var xvalue = "center";
+                var xvalue2 = "center";
+                var factor = 0.4;
+                var yvalue = scrolltotop * factor;
+                var yvalue2 = (-1) * scrolltotop * 0.5;
+                target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+                target2.style.backgroundPosition = xvalue2 + " " + yvalue2 + "px";
+                }
+            </script>
+            
+            
+            
+
+            <div id ="back01"></div>
+            <div id ="back02"></div>
+
+            <div class="about_grid_item">
+                <div class="who_box">
+                    <h2 style="line-height:220px">Who am I?</h2>
+                    <div class="overlay">
+                        <div class="heading"><strong>Who am I?</strong></div>
+                        <div class="description">
+                            <strong>Name</strong> &nbsp;&nbsp;Jason Wang
+                            <br><strong>Age</strong>&nbsp;&nbsp;19
+                            <br><strong>Studying</strong>&nbsp;&nbsp;Bachelor of Actuarial 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Studies/Computer Science
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_grid_item">
+                <div class="why_box">
+                    <h2 style="line-height:220px">Why?</h2>
+                    <div class="overlay">
+                        <div class="heading"><strong>Why?</strong></div>
+                        <div class="description">
+                            I really enjoy web development because of the creative freedom it offers and I want to take my 
+                            skills further into connecting the front and backend so I can explore even more!
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_grid_item">
+                <div class="facts_box">
+                    <h2 style="line-height:220px">Random Facts</h2>
+                    <div class="overlay">
+                        <div class="heading"><strong>Random Facts About Me</strong></div>
+                        <div class="description">
+                            <ul style="list-style-type:square;">
+                                <li>A bit gullible</li>
+                                <li>Hate horror movies</li>
+                                <li>Racket sport enthusiast</li>
+                                <li>Injury prone</li>
+                            </ul>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hobbies">
+                <div class="headings">
+                    <h3>My Hobbies</h3>
+                </div>
+                <div class="hobbies_grid">
+                    <div class="hobbies_grid_item">
+                        <video class="videos" autoplay loop muted>
+                            <source src="./images/tennis.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="hobbies_grid_item">I love playing recreational tennis, singles or doubles. It's a really fun
+                        , satisfying sport!
+                    </div>
+                    <div class="hobbies_grid_item">
+                        <img class="hobbies_image" src="./images/gaming.PNG" alt="Gaming Image">
+                    </div>
+                    <div class="hobbies_grid_item">I've played a lot of multiplayer games like League of Legends, Runescape
+                        and CSGO. 
+                    </div>
+                    <div class="hobbies_grid_item">
+                        <video class="videos" autoplay loop muted>
+                            <source src="./images/iceskating.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="hobbies_grid_item">Ice skating is a once in a while hobby that I'm not that great at, 
+                        but I never regret it when I do head to the rink.</div>
+                </div>
+            </div>
+            
+            <div class="headings">
+                <h3>Contacts</h3>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li id="instagram"><a href="https://www.instagram.com/jason_w999/" target="_blank"><img src="./images/instagram.png" alt="instagram_logo"></a></li>
+                    <li id="discord"><a href="https://discordapp.com/users/swub911666#4633" target="_blank"><img src="./images/discord.png" alt="discord_logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    
+
+
+
+</body>
